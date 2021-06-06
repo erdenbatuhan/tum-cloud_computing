@@ -1,0 +1,14 @@
+{
+  "name": "product-price-service",
+  "version": "1.0.0",
+  "author": "Batuhan Erden",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "seneca": "^3.2.2"
+  }
+}
+

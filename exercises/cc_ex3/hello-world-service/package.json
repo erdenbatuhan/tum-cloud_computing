@@ -1,0 +1,15 @@
+{
+  "name": "hello-world-service",
+  "version": "1.0.0",
+  "author": "Batuhan Erden",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "seneca": "^3.2.2"
+  }
+}
+
