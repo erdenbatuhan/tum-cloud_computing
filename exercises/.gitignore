@@ -1,0 +1,11 @@
+# OSX
+.DS_Store
+
+# JetBrains
+.idea
+
+# Node
+node_modules
+package-lock.json
+npm-debug.log
+
