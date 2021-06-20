@@ -43,7 +43,7 @@ router.get('/', (req, res) => {
  */
 router.route('/exercise3/:name/:productId').get((req, res) => {
     let name = req.params.name;
-    let productId = req.params.productId;
+    let productId = Number(req.params.productId);
 
     join(
         helloWorldService.sayWelcome(name),
