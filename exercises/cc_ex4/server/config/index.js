@@ -16,3 +16,4 @@ module.exports = {
         'host': 'product-price-service'
     }
 };
+

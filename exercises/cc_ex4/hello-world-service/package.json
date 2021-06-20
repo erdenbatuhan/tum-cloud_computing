@@ -1,15 +1,15 @@
 {
-  "name": "helloWorld",
+  "name": "hello-world-service",
   "version": "1.0.0",
-  "description": "Hello World Service",
+  "author": "Batuhan Erden",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "Anshul Jindal (ansjin)",
-  "license": "ISC",
   "dependencies": {
     "seneca": "^3.2.2"
   }
 }
+

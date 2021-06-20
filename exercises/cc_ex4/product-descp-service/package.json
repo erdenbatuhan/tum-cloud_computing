@@ -1,13 +1,12 @@
 {
-  "name": "product_descp_service",
+  "name": "product-descp-service",
   "version": "1.0.0",
+  "author": "Batuhan Erden",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Anshul Jindal (ansjin)",
-  "license": "ISC",
   "dependencies": {
     "seneca": "^3.2.2"
   }
