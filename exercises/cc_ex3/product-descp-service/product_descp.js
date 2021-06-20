@@ -8,13 +8,13 @@ module.exports = function (options) {
 
     function getProductURL({ productId }, callbackFn) {
         callbackFn(null, {
-            result: mockData.filter(p => p.product_id === productId).map(p => p.product_url)[0]
+            result: mockData.find(p => p["product_id"] === productId)["product_url"]
         })
     }
 
     function getProductName({ productId }, callbackFn) {
         callbackFn(null, {
-            result: mockData.filter(p => p.product_id === productId).map(p => p.product_name)[0]
+            result: mockData.find(p => p["product_id"] === productId)["product_name"]
         })
     }
 };

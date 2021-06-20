@@ -8,7 +8,7 @@ module.exports = function (options) {
     // Add the pattern functions and describe the logic inside the function
     function getProductPrice({ productId }, callbackFn) {
         callbackFn(null, {
-            result: mockData.filter(p => p.product_id === productId).map(p => p.product_price)[0]
+            result: mockData.find(p => p["product_id"] === productId)["product_price"]
         })
     }
 };
