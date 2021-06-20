@@ -23,7 +23,7 @@ const router = express.Router();
 /**
  * Middleware to use for all requests
  */
-router.use((_, _, next) => {
+router.use((req, res, next) => {
     /**
      * Logs can be printed here while accessing any routes
      */
@@ -34,7 +34,7 @@ router.use((_, _, next) => {
 /**
  * Base route of the router
  */
-router.get('/', (_, res) => {
+router.get('/', (req, res) => {
     res.json({ message: 'Welcome to Cloud Computing Exercises API!'});
 });
 
@@ -65,7 +65,7 @@ router.route('/exercise3/:name/:productId').get((req, res) => {
 /**
  * Exercise 4:
  */
-router.route('/exercise4').get((_, res) => {
+router.route('/exercise4').get((req, res) => {
     res.send("group 179 application deployed using kubernetes");
 });
 
