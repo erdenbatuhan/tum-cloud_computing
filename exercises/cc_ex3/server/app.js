@@ -68,6 +68,5 @@ router.route('/exercise3/:name/:productId').get(function(req, res) {
  */
 app.use('/api', router);
 
-
 module.exports = app;
 

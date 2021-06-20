@@ -23,7 +23,7 @@ const router = express.Router();
 /**
  * Middleware to use for all requests
  */
-router.use(function(req, res, next) {
+router.use((_, _, next) => {
     /**
      * Logs can be printed here while accessing any routes
      */
@@ -32,16 +32,16 @@ router.use(function(req, res, next) {
 });
 
 /**
- * Base route of the router : to make sure everything is working check http://localhost:8080/exercises)
+ * Base route of the router
  */
-router.get('/', function(req, res) {
+router.get('/', (_, res) => {
     res.json({ message: 'Welcome to Cloud Computing Exercises API!'});
 });
 
 /**
  * Exercise 3:
  */
-router.route('/exercise3/:name/:productId').get(function(req, res) {
+router.route('/exercise3/:name/:productId').get((req, res) => {
     let name = req.params.name;
     let productId = req.params.productId;
 
@@ -65,14 +65,15 @@ router.route('/exercise3/:name/:productId').get(function(req, res) {
 /**
  * Exercise 4:
  */
-
+router.route('/exercise4').get((_, res) => {
+    res.send("group 179 application deployed using kubernetes");
+});
 
 /**
  * REGISTER OUR ROUTES
  * our router is now pointing to /api
  */
 app.use('/api', router);
-
 
 module.exports = app;
 
