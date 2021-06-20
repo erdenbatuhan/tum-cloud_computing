@@ -41,7 +41,6 @@ router.get('/', function(req, res) {
 /**
  * Exercise 3:
  */
-// Query params: name & productId
 router.route('/exercise3/:name/:productId').get(function(req, res) {
     let name = req.params.name;
     let productId = req.params.productId;
